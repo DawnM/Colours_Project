@@ -66,6 +66,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * My Code Institute mentor - Youssef, for all his guidance
 * Code Institute student liaison - Tiff, for listening & providing calm when I panicked
 * Patrick Monks - former student who did a business landing page rather than the suggested band page. This appealed so much more.
+* [A PEN BY Ajay Patel](https://codepen.io/ajaypatelaj/pen/zIBjJ)
 * Contact form Tutorial from Bootstrapious.com
 * My step-mom, without whom there would be no mobile nail technician!
 * My beautiful wife, Coralize, for bringing home the tofu while I got to be creative. xx
