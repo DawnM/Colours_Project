@@ -1,0 +1,50 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  color: #867B68;
+  }
+
+  h1 {
+    font-size: 6em;
+  }
+
+.nav {
+/*    vertical-align: bottom; */
+    align-items: center;
+/*    display: inline-block; */
+    font-size: 1.5em;
+  }
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+  text-decoration: none;
+  border-radius:0px;
+  border-bottom: 4px solid #DFCCE4;
+  color: #544d41 !important;
+  background-color: transparent !important;
+}
+
+.nav-pills > li > a{
+    border-radius:0px;
+}
+
+.logo {
+  font-family: 'Kaushan Script', cursive;
+  width: 210px;
+  text-decoration: none;
+/*  display: inline-block; */
+}
+
+.technician {
+  height: 360px;
+  width: 320px;
+  border-radius: 100%;
+}
+
+.brush {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.2em;
+}
+
+.greeting {
+  font-style: italic;
+}
