@@ -48,3 +48,7 @@ body {
 .greeting {
   font-style: italic;
 }
+
+.badges {
+  height: 70px;
+}
