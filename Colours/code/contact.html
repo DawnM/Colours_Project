@@ -7,22 +7,38 @@
   <link rel="stylesheet" type="text/css" href="colours.css">
 </head>
 <body>
-    <nav>
-    <ul class="nav nav-pills">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="palette.html">Palette</a></li>
-      <li><a href="biosculpture.html">BioSculpture?</a></li>
-      <li class="active"><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="index.html" class="logo"><h1>Colours!</h1></a>
-    <a href="index.html" class="logo"><img class="logo" src="images/Colours-frangipani-logo.png"></a>
-  </nav>
+<!-- collapsing nav bar with logo -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+      
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span ><img src="images/BioMenuBurger@1x.png"></span>
+      </button>
+    </div>  
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav nav-pills head-menu">
+        <input type="hidden" id="selected_menu_item" value="=$selectedMenuId; ?>" />                                     
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="palette.html">Palette</a></li>
+        <li><a href="biosculpture.html">BioSculpture?</a></li>
+        <li class="active"><a href="contact.html">Say Hi</a></li>
+      </ul>
+
+      <a href="index.html" class="logo"><img src="images/Colours-logo@2x.png" alt="Colours! Logo" /></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Form -->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
 
-        <!-- We're going to place the form here in the next step -->
+        <!-- place the form here -->
         <form id="contact-form" method="post" action="contact.php" role="form">
 
     <div class="messages"></div>
@@ -32,14 +48,14 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_name">Firstname *</label>
+                  <!-- <label for="form_name">Firstname *</label> -->
                     <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_lastname">Lastname *</label>
+                  <!-- <label for="form_lastname">Lastname *</label> -->
                     <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
                     <div class="help-block with-errors"></div>
                 </div>
@@ -48,14 +64,14 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_email">Email *</label>
+                    <!-- <label for="form_email">Email *</label> -->
                     <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_phone">Phone</label>
+                    <!-- <label for="form_phone">Phone</label> -->
                     <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
                     <div class="help-block with-errors"></div>
                 </div>
@@ -64,7 +80,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label for="form_message">Message *</label>
+                    <!-- <label for="form_message">Message *</label> -->
                     <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -86,9 +102,11 @@
     </div>
   </div>
 
+
+</body>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="validator.js"></script>
   <script src="contact.js"></script>
-</body>
+  <script src="colours.js"></script>
 </html>

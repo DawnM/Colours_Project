@@ -8,16 +8,33 @@
   <link rel="stylesheet" type="text/css" href="colours.css">
 </head>
 <body>
-    <nav>
-    <ul class="nav nav-pills">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="palette.html">Palette</a></li>
-      <li><a href="biosculpture.html">BioSculpture?</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="index.html" class="logo"><h1>Colours!</h1></a><li>
-      <li><a href="index.html" class="logo"><img class="logo" src="images/Colours-frangipani-logo.png"></a><li>
-  </nav>
+<!-- collapsing nav bar with logo -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+      
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span ><img src="images/BioMenuBurger@1x.png"></span>
+      </button>
+    </div>  
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav nav-pills head-menu">
+        <input type="hidden" id="selected_menu_item" value="=$selectedMenuId; ?>" />                                     
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="palette.html">Palette</a></li>
+        <li><a href="biosculpture.html">BioSculpture?</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="index.html" class="logo"><img src="images/Colours-logo@2x.png" alt="Colours! Logo" /></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Introduction -->
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -39,7 +56,8 @@
     </div>
   </div>
 </body>
-
-<script type="text/javascript" src="http://code.query.com/jquery.min.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="colours.js"></script>
+  <script type="text/javascript" src="http://code.query.com/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="colours.js"></script>
 </html>

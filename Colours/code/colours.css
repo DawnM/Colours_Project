@@ -1,6 +1,11 @@
 body {
   font-family: 'Cabin', sans-serif;
   color: #867B68;
+  background: #ede3f0; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ede3f0, #fff) !important; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ede3f0, #fff) !important; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ede3f0, #fff) !important; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ede3f0, #fff) !important; /* Standard syntax */
   }
 
   h1 {
@@ -8,9 +13,9 @@ body {
   }
 
 .nav {
-/*    vertical-align: bottom; */
+    vertical-align: middle;
     align-items: center;
-/*    display: inline-block; */
+    display: inline-block;
     font-size: 1.5em;
   }
 
@@ -19,7 +24,7 @@ body {
   text-decoration: none;
   border-radius:0px;
   border-bottom: 4px solid #DFCCE4;
-  color: #544d41 !important;
+  color: #867B68 !important;
   background-color: transparent !important;
 }
 
@@ -31,7 +36,11 @@ body {
   font-family: 'Kaushan Script', cursive;
   width: 210px;
   text-decoration: none;
-/*  display: inline-block; */
+  display: inline-block;
+}
+
+.navbar {
+  display: inline-block;
 }
 
 .technician {
@@ -43,6 +52,7 @@ body {
 .brush {
   font-family: 'Kaushan Script', cursive;
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 .greeting {
