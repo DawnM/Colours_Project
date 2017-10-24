@@ -60,5 +60,6 @@ body {
 }
 
 .badges {
-  height: 70px;
+  height: 40px !important;
 }
+
