@@ -15,7 +15,8 @@ body {
 .nav {
     vertical-align: middle;
     align-items: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     font-size: 1.5em;
   }
 
@@ -26,21 +27,11 @@ body {
   border-bottom: 4px solid #DFCCE4;
   color: #867B68 !important;
   background-color: transparent !important;
+  align-items: center;
 }
 
 .nav-pills > li > a{
     border-radius:0px;
-}
-
-.logo {
-  font-family: 'Kaushan Script', cursive;
-  width: 210px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.navbar {
-  display: inline-block;
 }
 
 .technician {
@@ -63,3 +54,25 @@ body {
   height: 40px !important;
 }
 
+.container {
+  display: flex;
+
+}
+
+.introText {
+  flex-grow: 2;
+  padding: 5%;
+}
+
+.introImage {
+  flex-grow: 1;
+  padding: 5%;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+#plain:hover {
+  border-bottom: none;
+}
