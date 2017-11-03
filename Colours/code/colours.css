@@ -81,3 +81,7 @@ html {
 #plain:hover {
   border-bottom: none;
 }
+
+.thumbnail {
+  min-height: 150px;
+}
