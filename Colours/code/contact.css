@@ -1,12 +1,15 @@
 * {box-sizing: border-box;}
-
 .wrapper {
   max-width: 1410px;
   margin: 0 auto;
 }
 
 .wrapper > div {
+  border: none; /* this is just for guidance - remove in final */
+  border-radius: 5px;  /* this is just for guidance - remove in final */
+  background-color: none; 
   padding: 1em;
+  color: #867B68;
 }
 
 .wrapper {
@@ -19,19 +22,33 @@
 .lamp {
   grid-column: 1 / 2;
   grid-row: 1 / 5;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; 
 }
 
-.lamp > img {
-  height: auto;
-  width: 100%;
+#lamp {
+  width:auto;
+  height:auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.details { 
+.form-info { 
   grid-column: 2 / 3;
   grid-row: 1 / 4;
 }
 
-.message {
+.form-message {
   grid-column: 3 / 4;
   grid-row: 1 / 4;
 }
@@ -39,8 +56,20 @@
 .brushes {
   grid-column: 2 / 4;
   grid-row: 4 / 5;
+  text-align: center;
 }
 
-.form-control {
-  margin: 5%;
+#brushes {
+  width:auto;
+  height:auto;
+  max-width: 75%;
+  max-height: 75%;
 }
+
+input {
+  color: rgba(79,79,79, .5);
+  border: 2px solid rgba(79,79,79, .3);
+  margin: 10px;
+  padding: 2%;
+}
+

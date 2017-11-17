@@ -22,22 +22,29 @@
     </div>
   </nav>
 
-<!-- Contact Form -->
+  <!-- Contact Form -->
   <div class="wrapper">
-    <div class="lamp"><img src="images/Colours-uv-lamp.tif" /></div>
-      <div class="details">
-        <input id="form_name" type="text" name="name" class="form-control" placeholder="Your preferred name? *" required="required" data-error="Firstname is required.">
-        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Your last name? *" required="required" data-error="Lastname is required.">
-        <input id="form_email" type="email" name="email" class="form-control" placeholder="Your email address? *" required="required" data-error="Valid email is required.">
-        <input id="form_subject" type="subject" name="subject" class="form-control" placeholder="Contacting me about? *" required="required" data-error="Subject is required.">
-        <p class="text-muted"><strong>*</strong> These fields are required.</p>
-      </div>
-      <div class="message">
+    <div class="lamp">
+      <img id="lamp" src="images/Colours-uv-lamp.tif" />
+    </div>
+    
+    <div class="form-info">
+      <input id="form_name" type="text" name="name" class="form-control" placeholder="Your preferred name? *" required="required" data-error="Firstname is required.">
+      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Your last name? *" required="required" data-error="Lastname is required.">
+      <input id="form_email" type="email" name="email" class="form-control" placeholder="Your email address? *" required="required" data-error="Valid email is required.">
+      <input id="form_subject" type="subject" name="subject" class="form-control" placeholder="Contacting me about? *" required="required" data-error="Subject is required.">
+      <p class="text-muted"><strong>*</strong> These fields are required.</p>
+    </div>
+    
+    <div class="form-message">
         <textarea id="form_message" name="message" class="form-control" placeholder="Tell me more? *" rows="4" required="required" data-error="Please give me more detail in your message."></textarea>
         <input type="submit" class="btn btn-success btn-send" value="Send message">
-      </div>
-    <div class="brushes"><img src="images/Colours-brush-cluster.tif" /></div>
+    </div>
+    
+    <div class="brushes"><img id="brushes" src="images/Colours-brush-cluster.tif" /></div>
+
   </div>
+
 
 </body>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

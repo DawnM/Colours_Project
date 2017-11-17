@@ -4,12 +4,12 @@ html {
 
   body {
   font-family: 'Cabin', sans-serif;
-  color: #867B68;
+  color: #867b68;
   background: #ede3f0; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#ede3f0, #fff) !important; /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ede3f0, #fff) !important; /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ede3f0, #fff) !important; /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#ede3f0, #fff) !important; /* Standard syntax */
+  background: -webkit-linear-gradient(160deg, #eee9f0, #e8d3ee) !important; /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(160deg, #eee9f0, #e8d3ee) !important; /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(160deg, #eee9f0, #e8d3ee) !important; /* For Firefox 3.6 to 15 */
+  background: linear-gradient(160deg, #eee9f0, #e8d3ee) !important; /* Standard syntax */
   background-repeat: no-repeat;
   }
 
@@ -29,8 +29,8 @@ html {
 .nav-pills > .active > a:hover,.nav-pills > li > a:hover {
   text-decoration: none;
   border-radius:0px;
-  border-bottom: 4px solid #DFCCE4;
-  color: #867B68 !important;
+  border-bottom: 4px solid #d9bae1;
+  color: #867b68 !important;
   background-color: transparent !important;
   align-items: center;
 }
