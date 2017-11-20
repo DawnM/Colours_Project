@@ -5,8 +5,8 @@
 }
 
 .wrapper > div {
-  border: 1px dotted teal; /* this is just for guidance - remove in final */
-  border-radius: 5px;  /* this is just for guidance - remove in final */
+ /* border: 1px dotted teal;  this is just for guidance - remove in final */
+ /* border-radius: 5px;   this is just for guidance - remove in final */
   background-color: none; 
   padding: 1em;
   color: #867B68;

@@ -5,8 +5,8 @@
 }
 
 .wrapper > div {
-  border: 1px dotted teal; /* this is just for guidance - remove in final */
-  border-radius: 5px;  /* this is just for guidance - remove in final */
+  /* border: 1px dotted teal; this is just for guidance - remove in final */
+  /* border-radius: 5px;  this is just for guidance - remove in final */
   background-color: none; 
   padding: 1em;
   color: #867B68;
@@ -21,10 +21,19 @@
 
 .gel {
   grid-column: 1 / 2;
-  grid-row: 1;
+  grid-row: 1 / 2;
+}
+
+.gel > h3 > span {
+  font-size: 60%;
+  font-style: italic;
+}
+
+.gel-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .gel-blob {
@@ -37,15 +46,24 @@
 
 .carousel { 
   grid-column: 2 / 3;
-  grid-row: 1;
+  grid-row: 1 / 2;
 }
 
 .evo {
   grid-column: 3 / 4;
-  grid-row: 1;
+  grid-row: 1 / 2;
+}
+
+.evo > h3 > span {
+  font-size: 60%;
+  font-style: italic;
+}
+
+.evo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 2em;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .evo-bottle {

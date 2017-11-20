@@ -1,0 +1,67 @@
+* {box-sizing: border-box;}
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper > div {
+ /* border: 1px dotted teal;   this is just for guidance - remove in final */
+ /* border-radius: 5px;    this is just for guidance - remove in final */
+  background-color: none; 
+  padding: 1em;
+  color: #867B68;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.service {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.service1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.service2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.service3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.service4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.service5 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.service6 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.service-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+  height:auto;
+  max-width: 75%;
+  max-height: 75%;
+  border: 1px solid #867b68;
+  border-radius: 5px;
+}
