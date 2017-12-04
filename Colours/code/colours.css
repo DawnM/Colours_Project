@@ -17,6 +17,10 @@ html {
     font-size: 6em;
   }
 
+header {
+  text-align: center;
+}
+
 .nav {
     vertical-align: middle;
     align-items: center;
